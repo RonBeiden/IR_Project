@@ -33,7 +33,7 @@ from helper_functions import *
 from inverted_index_gcp import *
 from helper_rankers import *
 
-# import helper class
+# import helper classes
 helper = HelperFunctions()
 ranker = Rankers()
 pagerank = pagerank
@@ -87,7 +87,7 @@ class FinalSearch:
             title_score = bm25_title.search(query, N=50)
             body_score = bm25_body.search(query, N=50)
             BM25_score = self.merge_results(title_score, body_score, self.title_weight, self.text_weight)
-            # BM25_score = merge_results(title_score, body_score, t_s, b_s)
+
             return BM25_score
         except:
             print('An error occurred while searching')
@@ -122,7 +122,6 @@ class FinalSearch:
             sort_res = list(sorted(calc_scores.items(), key=lambda x: x[1], reverse=True)[:10])
             res = [(str(doc_id), self.title_string(doc_id)) for doc_id, acc in sort_res]
 
-            #gc.collect()
             return list(res)
 
         except Exception as e:
