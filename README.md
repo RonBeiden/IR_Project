@@ -39,7 +39,7 @@ In addition to the main search method, our engine offers four other search techn
 ## Notes
 
 - Find our project on Google Cloud Storage [here](https://console.cloud.google.com/storage/browser/bucket_ro;tab=objects?forceOnBucketsSortingFiltering=true&hl=he&project=unique-cooler-407516&prefix=&forceOnObjectsSortingFiltering=false).
-- You can access our search engine via the external IP address of our VM: [http://34.173.147.179:8080](http://34.173.147.179:8080) by activating it at `/search?query=YOUR_QUERY`.
+- You can access our search engine via the external IP address of our VM: [http://34.122.3.246:8080/](http://34.122.3.246:8080/) by activating it at `search?query=YOUR_QUERY`.
 - For any inquiries or assistance you may require, please feel free to reach out to us via email:
 
   Ron Beiden - [beiden@post.bgu.ac.il](mailto:beiden@post.bgu.ac.il)  
